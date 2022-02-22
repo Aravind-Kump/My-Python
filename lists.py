@@ -36,3 +36,9 @@ print(ani)
 print("SORT REVERSE :")
 ani.sort(reverse=True)
 print(ani)
+
+alpha = ['a', 'B', 'A', 'b']
+alpha.sort()
+print(alpha)
+alpha.sort(key=str.lower)
+print(alpha)
