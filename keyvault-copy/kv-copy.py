@@ -1,5 +1,5 @@
 from azure.identity import DefaultAzureCredential
-from azure.keyvault.secret import SecretClient
+from azure.keyvault.secrets import SecretClient
 import subprocess
 secret_list = []
 name_list = []
