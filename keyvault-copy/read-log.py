@@ -8,6 +8,7 @@ for log in log_file:
     if "<log pattern to be filtered>" in log:
         log_filter.append(x)
 
+# Read pattern from log
 for i in log_filter:
     print("kubectl scale {} {} -n {}".format(i.split()[13], i.split()[14], i.split()[16]))
     kube_run.append("kubectl scale {} {} -n {}".format(i.split()[13], i.split()[14], i.split()[16]))
